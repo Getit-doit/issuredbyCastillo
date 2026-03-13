@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Prata&display=swap');
+
+:root {
+  --night: #0f1725;
+  --slate: #314156;
+  --mist: #e8eef5;
+  --cloud: #f6f8fb;
+  --white: #ffffff;
+  --gold: #c48a3a;
+  --coral: #cc6848;
+  --line: rgba(15, 23, 37, 0.1);
+  --shadow: 0 24px 60px rgba(15, 23, 37, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(196, 138, 58, 0.18), transparent 30%),
+    linear-gradient(180deg, #eef3f9 0%, #f9fbfd 55%, #eef4f7 100%);
+  color: var(--night);
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  margin: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 20px;
+  padding: 18px 24px;
+  background: rgba(15, 23, 37, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--white);
+  border-bottom-color: var(--gold);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.8fr);
+  gap: 24px;
+  padding: 72px 28px 56px;
+  background:
+    linear-gradient(135deg, rgba(15, 23, 37, 0.96), rgba(32, 52, 75, 0.9)),
+    linear-gradient(60deg, rgba(204, 104, 72, 0.15), transparent 45%);
+  color: var(--white);
+}
+
+.hero-copy {
+  max-width: 720px;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #f3c985;
+}
+
+.hero h1,
+.quote-header h1,
+.story-section h1,
+.story-section h2 {
+  margin: 0;
+  font-family: 'Prata', Georgia, serif;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 1.03;
+  max-width: 10ch;
+}
+
+.hero-text {
+  margin: 18px 0 0;
+  max-width: 38rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, var(--gold), #d8a85d);
+  color: var(--night);
+  box-shadow: 0 14px 28px rgba(196, 138, 58, 0.26);
+}
+
+.secondary-btn {
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.service-card:hover,
+.panel-card:hover {
+  transform: translateY(-2px);
+}
+
+.hero-panel {
+  display: grid;
+  gap: 14px;
+  align-self: end;
+}
+
+.panel-card {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.panel-card span {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.panel-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.panel-card.accent {
+  background: linear-gradient(135deg, rgba(196, 138, 58, 0.22), rgba(204, 104, 72, 0.2));
+}
+
+.story-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 56px 24px 28px;
+}
+
+.story-section h2 {
+  margin-top: 8px;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  max-width: 18ch;
+}
+
+.story-section p,
+.story-section li,
+.quote-subtext,
+.quote-help,
+.quote-note,
+.compliance-note,
+footer {
+  color: var(--slate);
+  line-height: 1.75;
+}
+
+.metrics-strip {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px 24px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.metrics-strip article,
+.service-card,
+.form-embed,
+.quote-header {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.metrics-strip article {
+  padding: 18px;
+  box-shadow: 0 12px 26px rgba(15, 23, 37, 0.05);
+}
+
+.metrics-strip strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--night);
+  font-size: 1.1rem;
+}
+
+.services-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 24px 34px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.service-card {
+  padding: 22px;
+  box-shadow: 0 16px 30px rgba(15, 23, 37, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover,
+.feature-card:hover {
+  box-shadow: 0 22px 40px rgba(15, 23, 37, 0.1);
+}
+
+.icon-wrapper {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, rgba(196, 138, 58, 0.18), rgba(204, 104, 72, 0.14));
+  color: var(--coral);
+  font-size: 1.35rem;
+}
+
+.service-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.service-card p,
+.feature-card a,
+.quote-note a,
+.quote-help a,
+.story-section a,
+footer a,
+.legal-actions a {
+  color: var(--coral);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.feature-card {
+  background: linear-gradient(160deg, var(--night), #22324a);
+  color: var(--white);
+}
+
+.feature-card h3,
+.feature-card p,
+.feature-card a {
+  color: var(--white);
+}
+
+.feature-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.cta-band {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px 24px 60px;
+  text-align: center;
+}
+
+.quote-note {
+  margin: 16px auto 0;
+  font-size: 0.9rem;
+}
+
+.quote-header {
+  max-width: 980px;
+  margin: 36px auto 0;
+  padding: 34px 24px;
+  text-align: center;
+}
+
+.quote-header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.quote-header p {
+  margin: 12px auto 0;
+  max-width: 42rem;
+  color: var(--slate);
+}
+
+.quote-embed-section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 24px 60px;
+  text-align: center;
+}
+
+.form-embed.centered {
+  margin: 0 auto;
+}
+
+.placeholder-embed {
+  padding: 18px;
+}
+
+.placeholder-box {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px dashed rgba(15, 23, 37, 0.18);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--cloud), var(--white));
+  padding: 24px;
+}
+
+.placeholder-box h2 {
+  margin: 0 0 8px;
+  font-family: 'Prata', Georgia, serif;
+}
+
+.quote-help {
+  margin: 18px 0 0;
+}
+
+.compliance-note {
+  margin-top: 12px;
+  font-size: 0.82rem;
+}
+
+.legal-page {
+  padding-top: 42px;
+  padding-bottom: 54px;
+}
+
+.legal-page h1 {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.legal-page h2 {
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+
+.legal-page ul {
+  padding-left: 20px;
+}
+
+.legal-actions {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+footer {
+  padding: 20px 24px 24px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  background: rgba(246, 248, 251, 0.8);
+  font-size: 0.94rem;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 820px) {
+  .page-wrapper {
+    margin: 8px;
+    border-radius: 16px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 20px 40px;
+  }
+
+  .story-section,
+  .metrics-strip,
+  .services-section,
+  .quote-embed-section,
+  .cta-band {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .quote-header {
+    margin: 24px 18px 0;
+  }
+
+  .legal-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

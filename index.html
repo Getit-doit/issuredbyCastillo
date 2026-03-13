@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insured by Castillo | Personal & Commercial Coverage</title>
+  <meta name="description" content="Insured by Castillo helps Texas families and business owners compare coverage for auto, home, commercial, and specialty insurance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="quote.html">Get a Quote</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="sms-terms.html">SMS Terms</a>
+      <a href="help.html">Help</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent Insurance Advisors</p>
+          <h1>Insured by Castillo</h1>
+          <p class="hero-text">Clear coverage guidance for homeowners, drivers, contractors, and growing businesses across Texas.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="quote.html">Request a Quote</a>
+            <a class="secondary-btn" href="tel:+19722337300">Call (972) 233-7300</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Agency highlights">
+          <div class="panel-card">
+            <span>Same-day options</span>
+            <strong>Fast quote turnaround</strong>
+          </div>
+          <div class="panel-card">
+            <span>Personal service</span>
+            <strong>Real guidance, no guesswork</strong>
+          </div>
+          <div class="panel-card accent">
+            <span>Coverage mix</span>
+            <strong>Home, auto, commercial, specialty</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="story-section">
+        <div>
+          <p class="section-kicker">Why clients choose us</p>
+          <h2>Insurance decisions should feel informed, not rushed.</h2>
+        </div>
+        <p>
+          Insured by Castillo helps clients sort through competing policy options, identify weak spots in existing coverage,
+          and build protection that matches how they actually live and work. We focus on practical recommendations, responsive communication,
+          and long-term support after the policy is written.
+        </p>
+      </section>
+
+      <section class="metrics-strip" aria-label="Agency metrics">
+        <article>
+          <strong>Local</strong>
+          <span>Texas-based support for everyday policy questions.</span>
+        </article>
+        <article>
+          <strong>Flexible</strong>
+          <span>Coverage options tailored to budget, assets, and risk.</span>
+        </article>
+        <article>
+          <strong>Responsive</strong>
+          <span>Fast follow-up when you need changes or certificates.</span>
+        </article>
+        <article>
+          <strong>Practical</strong>
+          <span>Advice grounded in real coverage needs, not sales scripts.</span>
+        </article>
+      </section>
+
+      <section id="services" class="services-section">
+        <article class="service-card">
+          <div class="icon-wrapper"><i class="fas fa-house"></i></div>
+          <h3>Home Insurance</h3>
+          <p>Protection for your home, belongings, liability exposure, and storm-related risk.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrapper"><i class="fas fa-car-side"></i></div>
+          <h3>Auto Insurance</h3>
+          <p>Coverage options for daily commuters, families, and multi-vehicle households.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
+          <h3>Business Insurance</h3>
+          <p>General liability, property, inland marine, and other core commercial protections.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrapper"><i class="fas fa-helmet-safety"></i></div>
+          <h3>Contractor Coverage</h3>
+          <p>Policies built for job sites, tools, vehicles, and proof-of-insurance needs.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrapper"><i class="fas fa-water"></i></div>
+          <h3>Boat & RV</h3>
+          <p>Specialty insurance for weekend recreation, travel, and storage-related exposure.</p>
+        </article>
+        <article class="service-card feature-card">
+          <h3>Need help reviewing an existing policy?</h3>
+          <p>We can compare what you have today and flag limits, deductibles, or exclusions worth revisiting.</p>
+          <a href="quote.html">Start here</a>
+        </article>
+      </section>
+
+      <section class="cta-band">
+        <a class="primary-btn" href="quote.html">Get Started</a>
+        <p class="quote-note">
+          By providing your phone number, you consent to receive calls and text messages. Message frequency may vary.
+          Message and data rates may apply. Reply STOP to opt out and HELP for help. Review our
+          <a href="privacy-policy.html">Privacy Policy</a> and
+          <a href="sms-terms.html">SMS Terms &amp; Conditions</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Great State USA LLC. All rights reserved.</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="sms-terms.html">SMS Terms &amp; Conditions</a> |
+        <a href="help.html">Help</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

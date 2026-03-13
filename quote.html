@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quote | Insured by Castillo</title>
+  <meta name="description" content="Request an insurance quote from Insured by Castillo, operated by Great State USA LLC." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quote.html" class="active">Get a Quote</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="sms-terms.html">SMS Terms</a>
+      <a href="help.html">Help</a>
+    </nav>
+
+    <section class="quote-header">
+      <h1>Get a Quote</h1>
+      <p>Send your information and Great State USA LLC will follow up with coverage options that fit your situation.</p>
+    </section>
+
+    <main class="quote-embed-section">
+      <p class="quote-subtext">
+        Complete the form below and our team will follow up shortly.
+      </p>
+
+      <div class="form-embed centered">
+        <iframe
+          src="https://form.jotform.com/260715101235141"
+          title="Insured by Castillo Quote Request Form"
+          allow="geolocation; microphone; camera"
+          frameborder="0"
+          scrolling="yes"
+        ></iframe>
+      </div>
+
+      <p class="quote-help">
+        Prefer to talk first?
+        <a href="tel:+19722337300">Call or Text (972) 233-7300</a>.
+      </p>
+
+      <p class="compliance-note">
+        By submitting this form or texting <strong>Insured by Castillo (Great State USA LLC)</strong> at
+        <a href="tel:+19722337300">(972) 233-7300</a>, you agree to receive <strong>account notifications, customer care,
+        and marketing text messages</strong>. <strong>Message frequency may vary.</strong> <strong>Message and data rates may apply.</strong>
+        Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> for help. Review our
+        <a href="privacy-policy.html">Privacy Policy</a> and
+        <a href="sms-terms.html">SMS Terms &amp; Conditions</a>.
+      </p>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Great State USA LLC. All rights reserved.</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="sms-terms.html">SMS Terms &amp; Conditions</a> |
+        <a href="help.html">Help</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
